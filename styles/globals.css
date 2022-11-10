@@ -11,6 +11,21 @@ a {
   text-decoration: none;
 }
 
+table {
+  width: 100%;
+  max-width: 480px;
+  border: 1px solid yellow;
+}
+
+thead > tr > td {
+  border-bottom: 1px solid yellow;
+}
+
+td {
+  padding: 12px;
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
 }
