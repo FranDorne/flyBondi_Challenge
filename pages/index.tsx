@@ -19,11 +19,11 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   };
 };
 
-export default function Home<Props>({origins}) {
+export default function Home<Props>({origins}: any) {
   console.log(origins);
   return (
     <div className={styles.grid}>
-          {origins.map((origin) => (
+          {origins.map((origin: any) => (
             <Link key={origin} href={`/${origin}`}>
             <div className={styles.card}>
               <h2>{origin} &rarr;</h2>
